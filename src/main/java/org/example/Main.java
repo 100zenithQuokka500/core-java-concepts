@@ -6,5 +6,6 @@ public class Main {
         /*
         ghj
          */
+        System.out.println("hello world");
     }
 }
