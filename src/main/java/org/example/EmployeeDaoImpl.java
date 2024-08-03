@@ -20,7 +20,7 @@ public class EmployeeDaoImpl {
              PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setInt(1, employee.getId());
             statement.setString(2, employee.getName());
-            statement.setString(3, employee.getJob_title());
+            statement.setString(3, employee.getJobTitle());
             statement.setInt(4, employee.getSalary());
             return statement.executeUpdate();
         } catch (SQLException e) {
@@ -34,7 +34,7 @@ public class EmployeeDaoImpl {
         try (Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
              PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, employee.getName());
-            statement.setString(2, employee.getJob_title());
+            statement.setString(2, employee.getJobTitle());
             statement.setInt(3, id);
             return statement.executeUpdate();
         } catch (SQLException e) {

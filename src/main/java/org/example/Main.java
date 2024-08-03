@@ -41,7 +41,7 @@ public class Main {
         //emp.delete(5);
         Employee foundEmployee = emp.find(1);
         if (foundEmployee != null) {
-            System.out.println("Found employee: Name" + foundEmployee.getName() + ", Job-Title: " + foundEmployee.getJob_title()+" Salary:"+foundEmployee.getSalary());
+            System.out.println("Found employee: Name" + foundEmployee.getName() + ", Job-Title: " + foundEmployee.getJobTitle()+" Salary:"+foundEmployee.getSalary());
         } else {
             System.out.println("Employee not found");
         }
@@ -49,7 +49,7 @@ public class Main {
         List<Employee> allEmployees = emp.findAll();
         System.out.println("All Employees:");
         for (Employee empl : allEmployees) {
-            System.out.println("ID: " + empl.getId() + ", Name: " + empl.getName() + ", Job-Title: " + empl.getJob_title()+" ,salary:"+empl.getSalary());
+            System.out.println("ID: " + empl.getId() + ", Name: " + empl.getName() + ", Job-Title: " + empl.getJobTitle()+" ,salary:"+empl.getSalary());
         }
     }
 }
