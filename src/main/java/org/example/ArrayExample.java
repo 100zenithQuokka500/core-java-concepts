@@ -1,6 +1,6 @@
 package org.example;
 
-public class Example {
+public class ArrayExample {
     public static void main(String[] args) {
         int arr[]={1,2,3,4,5};
         System.out.println("1d array:");
@@ -24,6 +24,13 @@ public class Example {
                 System.out.println(arr2[i][j]);
             }
         }
+        System.out.println("******");
+        for(int i=0;i<arr2[0].length;i++){
+            for(int j=0;j<arr2.length;j++){
+                System.out.println(arr2[j][i]);
+            }
+        }
+
         for (int[] row:arr2) {
             for (int colmn:row) {
                 System.out.println(colmn);
